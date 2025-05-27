@@ -240,7 +240,7 @@ graph TD
 
 ### Service Catalog
 
-### 0. API Gateway
+#### 0. API Gateway
 
 **Purpose**: Unified entry point for all client and service requests
 
