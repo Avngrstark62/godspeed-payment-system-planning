@@ -64,6 +64,7 @@ The payment system follows a **microservices architecture** with clear service b
 ### Phase 1: Essential MVP Features
 
 #### A. Merchant Management
+
 1. **Merchant Registration & KYC**
    - User signup with email verification
    - KYC document upload (PAN, GST, Bank Details)
@@ -238,6 +239,20 @@ graph TD
 ## Microservices Architecture
 
 ### Service Catalog
+
+### 0. API Gateway
+
+**Purpose**: Unified entry point for all client and service requests
+
+**Responsibilities**:
+- Request routing and service discovery
+- Forwarding auth headers, injecting user/org claims
+- Rate limiting per IP/merchant
+- Logging, tracing, and error formatting
+- Header management, CORS, and API monitoring
+
+**Key Entities**: Routing rules, Auth tokens, Rate limit counters, Correlation IDs
+
 
 #### 1. User Service
 **Purpose**: Platform user management and organizational structure
